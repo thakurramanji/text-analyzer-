@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer - Character Counter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-text-height"></i> Text Analyzer</h1>
+            <p>Analyze your text with detailed statistics</p>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <div class="textarea-container">
+                    <textarea 
+                        id="textInput" 
+                        placeholder="Enter or paste your text here to analyze..."
+                        rows="8"
+                    ></textarea>
+                    <div class="textarea-actions">
+                        <button id="clearBtn" class="btn btn-secondary">
+                            <i class="fas fa-trash"></i> Clear
+                        </button>
+                        <button id="copyBtn" class="btn btn-secondary">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-font"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Characters (with spaces)</h3>
+                            <p id="charWithSpaces">0</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-text-width"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Characters (no spaces)</h3>
+                            <p id="charWithoutSpaces">0</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-words"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Words</h3>
+                            <p id="wordCount">0</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-paragraph"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Sentences</h3>
+                            <p id="sentenceCount">0</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Paragraphs</h3>
+                            <p id="paragraphCount">0</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Reading Time</h3>
+                            <p id="readingTime">0 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="additional-stats">
+                <div class="stat-row">
+                    <div class="stat-item">
+                        <span class="stat-label">Average word length:</span>
+                        <span id="avgWordLength">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Longest word:</span>
+                        <span id="longestWord">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Text Analyzer. Built with ❤️ for text analysis.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

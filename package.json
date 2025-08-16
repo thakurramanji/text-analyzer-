@@ -1,0 +1,38 @@
+{
+  "name": "text-analyzer",
+  "version": "1.0.0",
+  "description": "A modern, responsive web application for analyzing text content with comprehensive statistics",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "dev": "python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000 -o"
+  },
+  "keywords": [
+    "text-analyzer",
+    "character-counter",
+    "word-counter",
+    "text-statistics",
+    "web-app",
+    "responsive",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Text Analyzer Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/text-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/text-analyzer/issues"
+  },
+  "homepage": "https://github.com/yourusername/text-analyzer#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
